@@ -1,0 +1,9 @@
+# do not encrypt git related files
+.git/ !filter !diff
+.git* !filter !diff
+# encrypt obsidian md files
+*.md filter=git-crypt diff=git-crypt
+# optionally encrypt images
+*.png filter=git-crypt diff=git-crypt
+# no encryption for README.me
+/README.md !filter !diff
